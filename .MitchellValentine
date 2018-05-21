@@ -1,0 +1,196 @@
+<!DOCTYPE resume>
+<mitchellvalentine lang=”en zh es” localization=”Centennial, CO, USA”>
+  <head>
+    <meta name=”Mitchell Valentine Crumb” content=”fully capable” width=”100%” height=”unlimited”>
+    <meta univ=”CU at Boulder” grad=”2003” deg=”EPO Biology”>
+    <title>Onboarding The Many Talents, Skills and Abilities of MVC to your Company</title>
+    <link phone=”415-419-7598” email=”cafevalentine@gmail.com” href=”http://MitchellValentine.com”>
+    <!--[if IE]><link rel=”continue your search” href=”indeed.com”><![endif]-->
+    <!-- Add to home screen for Android, Chrome, Windows, Linux, iOS and modern mobile browsers -->
+  </head>
+  <body>
+    <noscript>
+     <p class=”offline”>When I’m not earning a living I am probably:<p>
+        <ul><li>Hanging with my munchkins</li>
+            <li>Studying Cryptocurrency Markets</li>
+            <li>Hiking in the hills</li>
+            <li>Flying FPV drones</li>
+            <li>Tinkering with my 3D printer</li>
+            <li>Spending time with family</li></ul>
+    </noscript>
+    <div id=”work”></div>
+    <!-- Todo: only include in production -->
+    <%= htmlWebpackPlugin.options.serviceWorkerLoader %>
+    <!-- built files will be auto injected -->
+  </body>
+</mitchellvalentine>
+
+<template>
+  <v-mvc>
+    <div id=”main” :class=”isAuthorized”>
+      <attitude bright creative encouraging collaborative explorative focused fearless googly></attitude>
+      <experience  value=”true” v-for=”job in jobs” :key=”job.duties”>
+        <projects success=”likely”> {{ $store.projects }} </projects>
+      </experience>
+      <tools @design=”adobeMaster()” @development=”fronteEndFramework()” @realWorld=”projectManagement()”>
+      </tools>
+    </div>
+      <social fb=”/mitchell.valentine” instagram=”/aimingqi” youtube=”/cafevalentine”></social>
+      <footer>Disclaimer: Rendering this code requires a special proprietary compiler. </br> 
+	       Please contact {{ administrator }} for access.</footer>
+  </v-mvc>
+</template>
+
+<script>
+import store from ‘memory’;
+import web3 from ‘web3’;
+export default {
+  props: [ ‘StellarGenetics’, ‘GlobalAwareness’, ‘FamilyTies’, ‘LOYALTY’, ‘COMMITMENT’, ‘1HAPPYGENT’ ],
+  data() {
+    return {
+      preferredFrameworks: [ “VueJS”, “Vuetfify”, “Wordpress”, “Truffle” ],
+      availableEnvironments: [ “hosted”, “Azure”, “Firebase”, “AWS” ],
+      deprecatedFrameworks: [ “Joomla”, “Drupal” ],
+      preferredCryptocurrencies: [ “ADA”, “ETH”, “IOTA”, “DOGE”, “LTC”, “BTC” ],
+      favoriteLanguages: [ “HTML”, “CSS”, “JavaScript”, “Solidity”, “PHP”, “Haskell” ],
+      jobs: [{
+          Company: “College for Financial Planning”,
+          Position: “Front End Developer / Graphic & Web Designer”,
+          StartDate: 2014,
+          EndDate: undefined,
+          Location: “Centennial, CO, USA”,
+          linkURL: “http://CFFPinfo.com”,
+          duties: [ “App Development”, “Web Development”, “Web Design”, “Print Design”, 
+	     “Brand Management & Development”, “Magazine Placements”, “Banner Design & Animation”,
+            “Logo Design”, “Project Planning”, “Presentation Design”, “Social Media”, “Digital Badging” ]},
+        { Company: “ThoseFunkenDronez LLC & Drone-Pilot-Zone”,
+          Position: “Owner/Creator”,
+          StartDate: 2014,
+          EndDate: undefined,
+          Location: “Centennial, CO, USA”,
+          linkURL: “http://ThoseFunkenDronez.com”,
+          duties: [ “Event Production”, “Web Development”, “Web Design”, “Print Design”, “Client Relations”,
+            “SEO”, “Marketing”, “Logo Design & Branding”, “Project Planning”, “Presentation Design” ]},
+        { Company: “An Long Productions”,
+          Position: “Owner/Designer/Developer”,
+          StartDate: 2009,
+          EndDate: undefined,
+          Location: “China to California to Colorado”,
+          duties: [ “Event Production”, “Web Development”, “Web Design”, “Video Production”, “Print Design”,
+            “Client Relations”, “SEO”, “Marketing”, “eBusiness Consulting”, “Logo Design & Branding”,
+            “Project Planning”, “Presentation Design” ]},
+        { Company: “TV3 Nordisk Film”,
+          Show: “Kärlek Över Atlanten (Love Across the Atlantic)”,
+          Position: “Television Personality”,
+          StartDate: 2012,
+          EndDate: 2013,
+          Location: “Stockholm, Sweden”,
+          linkURL: “https://www.facebook.com/karlekoveratlanten/”,
+          EpicPoint: “Watch the show for more details” },
+        { Company: “Cornerstone Prep Learning Center”,
+          Position: “Curriculum Developer”,
+          StartDate: 2011,
+          EndDate: 2011,
+          Location: “Xiamen, Fujian, China”,
+          duties: [ “Multimedia and Web Enhanced Curriculum Design”, “ESL Curriculum Development”,
+            “Layout Design”, “Video Production” ]},
+        { Company: “Xiamen Beach Entertainment”,
+          Position: “Owner/Manager”,
+          StartDate: 2008,
+          EndDate: 2011,
+          Location: “Xiamen, Fujian, China”,
+          duties: [ “Event Production”, “Social Media Marketing in China”, “Video Production”, 
+	     “Chinese Government Relations“ ]},
+        { Company: “Xiamen Yingcai School International Education Center”,
+          Position: “Academic Director and Program Founder”,
+          StartDate: 2007,
+          EndDate: 2010,
+          Location: “Xiamen, Fujian, China”,
+          linkURL: “http://www.xmycxx.com”,
+          duties: [ “Multimedia and Web Enhanced Curriculum Design”, “ESL Curriculum Development”,
+            “Hiring Teachers”, “Recruiting”, “Teaching” ]},
+        { Company: “BookEnd Espresso Cafe”,
+          Position: “General Manager”,
+          StartDate: 2001,
+          EndDate: 2006,
+          Location: “Boulder, CO USA”,
+          duties: [ “Staff Management”, “Product Development”, “Marketing”, “Recruiting”,
+            “Inventory Management”, “Business Develoment”, “Business Management” ]},
+        administrator: “Mitchell Valentine”, } ] };
+   },
+   methods: {
+    adobeMaster(element) {
+      if (raster) {
+        return PHOTOSHOP;
+      } else if (vector) {
+        return ILLUSTRATOR;
+      } else if (layout) {
+        return INDESIGN;
+      } else if (animation) {
+        return ANIMATE;
+      } else if (video) {
+        return AFTEREFFECTS && PREMIER; }
+      //  else if (web) { return MUSE }
+    },
+    fronteEndFramework(project) {
+      const ClientNeed = this.project.direction;
+      const BaseSkill = ( mvc.jobs + univ ) * duration;
+      let duration = today.Date() - jobs[0].StartDate;
+      let NewSkill = always.evolving();
+      if (ClientNeed === “Basic”) {
+        return WORDPRESS;
+        assets.gather();
+        template.find();
+        rapid.deploy();
+      } else if (ClientNeed >= Custom) {
+        return JSFramework;
+        budget.calculate();
+        if (project.budget === “Sufficient”) {
+          planning.start();
+          assets.gather();
+          preferredFrameworks.select();
+          optimalEnvironment.select(availableEnvironments);
+          project
+            .build()
+            .test()
+            .deploy()
+            .maintain();
+          bill.maintain();}}
+    },
+    projectManagement(project) {
+      switch (project.type) {
+        case WEB:
+          return {
+            ...state,
+            vcs: ‘git’,
+            ide: ‘vsc’,
+            browser: ‘chrome’,
+            pkgmgr: ‘npm || yarn’,
+            smartContracts: ‘truffle’,
+            cloud: ‘firebase’ };
+        case PUBLICEVENT:
+          return {
+            ...state,
+            speaker: true,
+            planner: true,
+            coordinator: true,
+            designer: true };
+        case CONSTRUCTION:
+          return {
+            ...state,
+            strength: “Sufficient”,
+            toolLevel: “Welder+”,
+            canSolder: true,
+            powerTools: true };
+      }}},
+  name: “work” };
+</script>
+
+<style scoped>
+.favoriteColor { color: #c00000; }
+.car { direction: 2017MiniCooperClubman; } 
+.fashion { flex: 1; }
+.home { right: owner; }
+.phone { visibility: pixel2xl; }
+</style>
+
