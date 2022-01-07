@@ -49,12 +49,16 @@ export default {
   props: [ ‘StellarGenetics’, ‘GlobalAwareness’, ‘FamilyTies’, ‘LOYALTY’, ‘COMMITMENT’, ‘1HAPPYGENT’ ],
   data() {
     return {
+      preferredOS: [ “Linux”, “Ubuntu”, “Windows 10”, “Kali”, “VMWare-esxi” ],
       preferredFrameworks: [ “VueJS”, “Vuetfify”, “Svelte”, “React”, , “Truffle” ],
-      availableEnvironments: [ “hosted”, “Azure”, “Firebase”, “AWS” ],
+      preferredDecentralizedStorage: [ “IPFS”, “Arweave”, ],
+      availableEnvironments: [ “locallyhosted”, “Azure”, “Firebase”, “AWS” ],
       deprecatedFrameworks: [ “Joomla”, “Drupal”, “Wordpress” ],
       preferredCryptocurrencies: [ “ADA”, “SOL”, “ETH”, “IOTA”, “DOGE”, “LTC”, “BTC” ],
       favoriteLanguages: [ “HTML”, “CSS”, “JavaScript”, “Rust”, “Solidity”, “Plutus” ],
-      jobs: [{
+      hackathons: [ “ETHDenver2018”, “ETHDenver2019”, “ETHDenver2020”, “ETHDenver2022”, “CardanoSummit2021”, ],
+      hackathonAwards: [ “InterPlanetary Dao @ETHDenver2020”, ],
+      jobsWithBenefits: [{
           Company: “Kaplan North America”,
           Position: “Pricing Analyst”,
           StartDate: 2018,
@@ -128,6 +132,32 @@ export default {
           duties: [ “Staff Management”, “Product Development”, “Marketing”, “Recruiting”,
             “Inventory Management”, “Business Develoment”, “Business Management” ]},
         administrator: “Mitchell Valentine”, } ] };
+   },
+      projects: {
+          web: [
+            active:[
+            {site: "Mitchell Valentine", url: "https://mitchellvalentine.com"},
+            {site: "the-game", url: "https://the-game.fun"},
+            {site: "UniTEGRITY", url: "https://unitegrity.com"},
+            {site: "Comrade Brewing", url: "https://comradebrewing.com"},
+            {site: "CorrectiveBodySolutions", url: "https://CorrectiveBodySolutions.com"},
+            {site: "Swampthing.org", url: "https://Swampthing.org"},
+            
+            ],
+            inactive:[
+            {site: "College for Financial Planning", url: "https://cffp.edu"},
+            {site: "Paramount Booking", url: "https://paramountbooking.com"},
+            {site: "Drone-Pilot-Zone", url: "https://Drone-Pilot-Zone.com"},
+            {site: "Those Funken Dronez", url: "https://Those-Funken-Dronez.com"},
+            {site: "Crypto-Catalyst", url: "https://Crypto-Catalyst.com"},
+            ]
+          ]
+          live: [
+            event: [
+              {title: "Those Funken Dronez", location: "Denver, CO, USA", year: "2016", type: "FPV Drone Race and Funk Concert"  }
+              {title: "Xiamen Beach Party", location: "Xiamen, Fujian, China", year: "2007-2011", type: "Beach Party and Concert Series" }
+            ]
+          ]
    },
    methods: {
     adobeMaster(element) {
