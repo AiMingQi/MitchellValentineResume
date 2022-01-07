@@ -48,12 +48,22 @@ export default {
   props: [ ‘StellarGenetics’, ‘GlobalAwareness’, ‘FamilyTies’, ‘LOYALTY’, ‘COMMITMENT’, ‘1HAPPYGENT’ ],
   data() {
     return {
-      preferredFrameworks: [ “VueJS”, “Vuetfify”, “Wordpress”, “Truffle” ],
+      preferredFrameworks: [ “VueJS”, “Vuetfify”, “Svelte”, “React”, , “Truffle” ],
       availableEnvironments: [ “hosted”, “Azure”, “Firebase”, “AWS” ],
-      deprecatedFrameworks: [ “Joomla”, “Drupal” ],
-      preferredCryptocurrencies: [ “ADA”, “ETH”, “IOTA”, “DOGE”, “LTC”, “BTC” ],
-      favoriteLanguages: [ “HTML”, “CSS”, “JavaScript”, “Solidity”, “PHP”, “Haskell” ],
+      deprecatedFrameworks: [ “Joomla”, “Drupal”, “Wordpress” ],
+      preferredCryptocurrencies: [ “ADA”, “SOL”, “ETH”, “IOTA”, “DOGE”, “LTC”, “BTC” ],
+      favoriteLanguages: [ “HTML”, “CSS”, “JavaScript”, “Rust”, “Solidity”, “Plutus” ],
       jobs: [{
+          Company: “Kaplan North America”,
+          Position: “Pricing Analyst”,
+          StartDate: 2018,
+          EndDate: undefined,
+          Location: “Centennial, CO, USA”,
+          linkURL: “http://Kaplan.com”,
+          duties: [ “Pricing Analysis”, “Amazon Channel Distribution Strategy”, “Competitor Analysis”, “Data Tool Development”, “Tableau”, 
+	        “Business Strategy”, “Vertical Analysis”, “Value Determination”, “Policy Design”, “Project Planning”, “Presentation Design” ]},
+          notes: [“Kaplan North America acquired the College for Financial Planning in 2018”]
+        {
           Company: “College for Financial Planning”,
           Position: “Front End Developer / Graphic & Web Designer”,
           StartDate: 2014,
@@ -61,7 +71,7 @@ export default {
           Location: “Centennial, CO, USA”,
           linkURL: “http://CFFPinfo.com”,
           duties: [ “App Development”, “Web Development”, “Web Design”, “Print Design”, 
-	     “Brand Management & Development”, “Magazine Placements”, “Banner Design & Animation”,
+	        “Brand Management & Development”, “Magazine Placements”, “Banner Design & Animation”,
             “Logo Design”, “Project Planning”, “Presentation Design”, “Social Media”, “Digital Badging” ]},
         { Company: “ThoseFunkenDronez LLC & Drone-Pilot-Zone”,
           Position: “Owner/Creator”,
@@ -138,7 +148,7 @@ export default {
       let duration = today.Date() - jobs[0].StartDate;
       let NewSkill = always.evolving();
       if (ClientNeed === “Basic”) {
-        return WORDPRESS;
+        return VueJS(Vuetify());
         assets.gather();
         template.find();
         rapid.deploy();
@@ -164,9 +174,9 @@ export default {
             ...state,
             vcs: ‘git’,
             ide: ‘vsc’,
-            browser: ‘chrome’,
+            browser: ‘brave’,
             pkgmgr: ‘npm || yarn’,
-            smartContracts: ‘truffle’,
+            smartContracts: ‘solana’,
             cloud: ‘firebase’ };
         case PUBLICEVENT:
           return {
@@ -188,9 +198,9 @@ export default {
 
 <style scoped>
 .favoriteColor { color: #c00000; }
-.car { direction: 2017MiniCooperClubman; } 
+.car { primary: 2020KiaTellurideSXP, joy: 2005LexusSC430 } 
 .fashion { flex: 1; }
 .home { right: owner; }
-.phone { visibility: pixel2xl; }
+.phone { visibility: SamsungS21Ultra; }
 </style>
 
